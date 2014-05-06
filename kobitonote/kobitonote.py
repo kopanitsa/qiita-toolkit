@@ -112,8 +112,8 @@ def run_osascript(script, *args):
 ## Kobitoアイテムクラス
 class KobitoItem :
     def __init__(self, row, items_tags={}):
-        z_pk, z_ent, z_opt, zprivate, zcreated_at, zposted_at, zupdated_at, \
-            zbody, zlinked_file, zraw_body, ztitle, zurl, zuuid = row
+        z_pk, z_ent, z_opt, zin_trash, zprivate, zteam, zcreated_at, zposted_at, zupdated_at, \
+          zupdated_at_on_qiita, zbody, zkey, zlinked_file, zraw_body, ztitle, zurl, zuuid = row
         self._pk         = z_pk
         self._ent        = z_ent
         self._opt        = z_opt
